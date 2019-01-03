@@ -7,6 +7,7 @@ target 'RandomUser' do
   # Pods for RandomUser
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'R.swift'
 
   target 'RandomUserTests' do
     inherit! :search_paths
