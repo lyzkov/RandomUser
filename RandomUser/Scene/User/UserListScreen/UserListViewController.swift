@@ -10,8 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-private let users = ["Maciej", "Piotr"]
-
 class UserListViewController: UITableViewController {
     
     let disposeBag = DisposeBag()
@@ -22,10 +20,11 @@ class UserListViewController: UITableViewController {
         tableView.delegate = nil
         tableView.dataSource = nil
         
-        let usersFeed = Observable.just(users)
-        usersFeed
+        let usersFeed = UserRepository().getOneHundredUsers()
+        
+        usersFeed.asObservable().catchErrorJustReturn([])
             .bind(to: tableView.rx.items(cellIdentifier: R.reuseIdentifier.userName.identifier)) { (row, user, cell: UserTableViewCell) in
-                cell.userName.text = user
+                cell.userName.text = user.fullName
             }
             .disposed(by: disposeBag)
     }

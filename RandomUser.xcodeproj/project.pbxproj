@@ -18,6 +18,15 @@
 		F317DFA221DD71CC00F6D77B /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317DFA121DD71CC00F6D77B /* User.storyboard */; };
 		F317DFA421DD7EDD00F6D77B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFA321DD7EDD00F6D77B /* UserTableViewCell.swift */; };
 		F317DFA821DD836000F6D77B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFA721DD835F00F6D77B /* R.generated.swift */; };
+		F317DFAB21DD935500F6D77B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFAA21DD935500F6D77B /* API.swift */; };
+		F317DFAD21DD938800F6D77B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFAC21DD938800F6D77B /* Endpoint.swift */; };
+		F317DFAF21DD9B9000F6D77B /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFAE21DD9B9000F6D77B /* Decode.swift */; };
+		F317DFB721DDA4FE00F6D77B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFB621DDA4FE00F6D77B /* User.swift */; };
+		F317DFBA21DDA59600F6D77B /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFB921DDA59600F6D77B /* UserRepository.swift */; };
+		F317DFBF21E5084A00F6D77B /* GetUsersEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFBE21E5084A00F6D77B /* GetUsersEndpoint.swift */; };
+		F317DFC221E509C700F6D77B /* RandomUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFC121E509C700F6D77B /* RandomUserAPI.swift */; };
+		F317DFC421E538F900F6D77B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFC321E538F900F6D77B /* Repository.swift */; };
+		F317DFC821E5648F00F6D77B /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317DFC721E5648F00F6D77B /* UserList.swift */; };
 		FD25D0D48C646400598634D8 /* Pods_RandomUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08004A82A8E5D645F77B779D /* Pods_RandomUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +61,15 @@
 		F317DFA121DD71CC00F6D77B /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		F317DFA321DD7EDD00F6D77B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		F317DFA721DD835F00F6D77B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		F317DFAA21DD935500F6D77B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F317DFAC21DD938800F6D77B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F317DFAE21DD9B9000F6D77B /* Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decode.swift; sourceTree = "<group>"; };
+		F317DFB621DDA4FE00F6D77B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F317DFB921DDA59600F6D77B /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		F317DFBE21E5084A00F6D77B /* GetUsersEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersEndpoint.swift; sourceTree = "<group>"; };
+		F317DFC121E509C700F6D77B /* RandomUserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPI.swift; sourceTree = "<group>"; };
+		F317DFC321E538F900F6D77B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F317DFC721E5648F00F6D77B /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +162,8 @@
 		F317DF9621D959FE00F6D77B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F317DFB821DDA57B00F6D77B /* Repository */,
+				F317DFA921DD926900F6D77B /* Networking */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -205,6 +225,9 @@
 		F317DF9D21D9A81A00F6D77B /* User */ = {
 			isa = PBXGroup;
 			children = (
+				F317DFC621E54C5600F6D77B /* Networking */,
+				F317DFC521E54C4200F6D77B /* Repository */,
+				F317DFB421DDA44800F6D77B /* Model */,
 				F317DFA021DD71A900F6D77B /* UserListScreen */,
 				F317DFA121DD71CC00F6D77B /* User.storyboard */,
 			);
@@ -226,6 +249,58 @@
 				F317DFA721DD835F00F6D77B /* R.generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		F317DFA921DD926900F6D77B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F317DFAA21DD935500F6D77B /* API.swift */,
+				F317DFAC21DD938800F6D77B /* Endpoint.swift */,
+				F317DFAE21DD9B9000F6D77B /* Decode.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F317DFB421DDA44800F6D77B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F317DFC721E5648F00F6D77B /* UserList.swift */,
+				F317DFB621DDA4FE00F6D77B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F317DFB821DDA57B00F6D77B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F317DFC321E538F900F6D77B /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F317DFC021E5098600F6D77B /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				F317DFBE21E5084A00F6D77B /* GetUsersEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		F317DFC521E54C4200F6D77B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F317DFB921DDA59600F6D77B /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F317DFC621E54C5600F6D77B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F317DFC021E5098600F6D77B /* Endpoint */,
+				F317DFC121E509C700F6D77B /* RandomUserAPI.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,10 +504,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F317DFBA21DDA59600F6D77B /* UserRepository.swift in Sources */,
+				F317DFAD21DD938800F6D77B /* Endpoint.swift in Sources */,
 				F317DFA421DD7EDD00F6D77B /* UserTableViewCell.swift in Sources */,
 				F317DF7621D8FFD900F6D77B /* ViewController.swift in Sources */,
+				F317DFC221E509C700F6D77B /* RandomUserAPI.swift in Sources */,
+				F317DFBF21E5084A00F6D77B /* GetUsersEndpoint.swift in Sources */,
+				F317DFAF21DD9B9000F6D77B /* Decode.swift in Sources */,
+				F317DFC421E538F900F6D77B /* Repository.swift in Sources */,
 				F317DFA821DD836000F6D77B /* R.generated.swift in Sources */,
 				F317DF7421D8FFD900F6D77B /* AppDelegate.swift in Sources */,
+				F317DFC821E5648F00F6D77B /* UserList.swift in Sources */,
+				F317DFAB21DD935500F6D77B /* API.swift in Sources */,
+				F317DFB721DDA4FE00F6D77B /* User.swift in Sources */,
 				F317DF9F21DCD95100F6D77B /* UserListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
